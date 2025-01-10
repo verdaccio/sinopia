@@ -10,6 +10,12 @@ The following table describes the versions of this project:
 | 7.x next         | :x:                | 18              | 7.x    | next-7           | 7.x-next                | n/a         |
 | 8.x experimental | :x:                | 18              | master | next-8           | nightly-master          | n/a         |
 
+## Migration Guide
+
+The migration from Verdaccio v5/v6 to v7 contains breaking changes. Refer to the priliminary [migration guide](https://github.com/verdaccio/verdaccio/blob/master/docs/migration-v5-to-v6.md) for more information.
+
+For migrations from older versions to v5/6 refer to the [v5 migration guide](https://verdaccio.org/blog/2021/04/14/verdaccio-5-migration-guide/).
+
 ## Npm Registry
 
 The official Verdaccio npm packages are located at https://www.npmjs.com/package/verdaccio.

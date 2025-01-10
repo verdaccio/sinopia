@@ -51,9 +51,9 @@ pnpm install -g verdaccio
 
 ![install verdaccio](/img/install_verdaccio.gif)
 
-### Next major release (verdaccio 6 alpha) {#next-major-release}
+### Next Major Release (Verdaccio 7) {#next-major-release}
 
-Next [major release is under development](https://github.com/verdaccio/verdaccio/discussions/2970), byt can try it out already, either for testing purposes or helping to catch any possible bug, if you find something report it under the label [6.x bugs](https://github.com/verdaccio/verdaccio/labels/6.x%20bugs).
+Next [major release is under development](https://github.com/verdaccio/verdaccio/discussions/2970). You can try it out already, either for testing purposes, or for helping to catch any possible bug. If you find something, report it under the label [`7.x branch (next)`](https://github.com/verdaccio/verdaccio/issues?q=is%3Aopen+is%3Aissue+label%3A%227.x+branch+%28next%29%22).
 
 ```bash
 npm install -g verdaccio@7-next
@@ -65,7 +65,13 @@ or with the docker image
 docker pull verdaccio/verdaccio:nightly-master
 ```
 
-> The docker image `verdaccio/verdaccio:nightly-master` is alinged with the latest commits in master branch, while the npmjs version has a longer release cycle. **It is highly recommended don't use alpha versions for production**.
+> The docker image `verdaccio/verdaccio:nightly-master` is alinged with the latest commits in `master` branch, while the npmjs version has a longer release cycle. **It is highly recommended to not use alpha versions for production**.
+
+## Migration Guides
+
+The migration from Verdaccio v5/v6 to v7 contains breaking changes. Refer to the preliminary [migration guide](https://github.com/verdaccio/verdaccio/blob/master/docs/migration-v5-to-v6.md) for more information.
+
+For migrations from older versions to v5/6 refer to the [v5 migration guide](https://verdaccio.org/blog/2021/04/14/verdaccio-5-migration-guide/).
 
 ## Basic Usage {#basic-usage}
 

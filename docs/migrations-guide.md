@@ -1,4 +1,4 @@
-# Migration Guide from Verdaccio 5 to Verdaccio 6
+# Migration Guide from Verdaccio v5 and v6 to Verdaccio v7
 
 Notes regarding breaking changes for next major release.
 
@@ -79,8 +79,15 @@ for more details.
 
 Introduce environment variables for legacy tokens.
 
-- `VERDACCIO_LEGACY_ALGORITHM`: Allows to define the specific algorithm for the token signature which by default is `aes-256-ctr`
-- `VERDACCIO_LEGACY_ENCRYPTION_KEY`: By default, the token stores in the database, but using this variable allows to get it from memory
+- `VERDACCIO_LEGACY_ALGORITHM`:
+
+  Allows to define the specific algorithm for the token signature which by default is `aes-256-ctr`. The algorithm must be supported by `crypto.createCipheriv` and `crypto.createDecipheriv`.
+
+- `VERDACCIO_LEGACY_ENCRYPTION_KEY`:
+
+  By default, the token are stored in the database, but using this variable allows to get tokens from memory. The length of the key must be 32 characters otherwise will throw an error.
+
+Read more on [nodejs.org](https://nodejs.org/api/crypto.html#crypto_crypto_createcipheriv_algorithm_key_iv_options).
 
 #### @verdaccio/commons-api migration
 

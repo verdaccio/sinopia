@@ -1,3 +1,0 @@
-## Developing plugins
-
-TBA

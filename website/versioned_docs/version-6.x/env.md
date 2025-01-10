@@ -21,8 +21,6 @@ To change the behavior on runtime on running the image, these are the list of av
 
 Enables gracefully shutdown, more info at the [pull request #2121](https://github.com/verdaccio/verdaccio/pull/2121).
 
->
-
 ### VERDACCIO_PUBLIC_URL {#public-url}
 
 Define a specific public url for your server, it overrules the `Host` and `X-Forwarded-Proto` header if a reverse proxy is being used, it takes in account the `url_prefix` if is defined.
@@ -59,6 +57,10 @@ $ VERDACCIO_FORWARDED_PROTO=CloudFront-Forwarded-Proto verdaccio --listen 5000
 ### VERDACCIO_STORAGE_PATH {#storage-path}
 
 By default, the storage is taken from config file, but using this variable allows to set it from environment variable.
+
+### VERDACCIO_STORAGE_NAME
+
+The database name for `@verdaccio/local-storage` is by default `.verdaccio-db.json`, but this can be update by using this variable.
 
 ### EXPERIMENTAL_VERDACCIO_LOGGER_COLORS {#logger-colors}
 
