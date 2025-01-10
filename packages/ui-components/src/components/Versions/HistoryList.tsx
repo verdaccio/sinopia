@@ -39,7 +39,11 @@ const VersionsHistoryList: React.FC<Props> = ({ versions, packageName, time }) =
   return (
     <List dense={true}>
       {Object.keys(listVersions)
-        .reverse()
+        .sort((a, b) => {
+          const timeA = time[a] ? new Date(time[a]).getTime() : 0;
+          const timeB = time[b] ? new Date(time[b]).getTime() : 0;
+          return timeB - timeA;
+        })
         .map((version) => (
           <ListItem
             className="version-item"
@@ -48,7 +52,11 @@ const VersionsHistoryList: React.FC<Props> = ({ versions, packageName, time }) =
             sx={{ pr: 0 }}
           >
             <Link to={`${Route.DETAIL}${packageName}/v/${version}`} variant="outline">
-              <ListItemText disableTypography={false} primary={version}></ListItemText>
+              <ListItemText
+                data-testid={`version-list-link`}
+                disableTypography={false}
+                primary={version}
+              />
             </Link>
             {typeof versions[version]?.deprecated === 'string' ? (
               <Chip

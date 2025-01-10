@@ -7,6 +7,7 @@ import { fireEvent, render, screen } from '../../test/test-react-testing-library
 import Versions, { Props } from './Versions';
 import data from './__partials__/data.json';
 import dataDeprecated from './__partials__/deprecated-versions.json';
+import dataUnsorted from './__partials__/unsorted-versions.json';
 
 const VersionsComponent: React.FC<Props> = (props) => (
   <MemoryRouter>
@@ -66,6 +67,16 @@ describe('<Version /> component', () => {
     // pick some versions
     expect(screen.queryByText('0.0.2')).not.toBeInTheDocument();
     expect(screen.getByText('0.0.1')).toBeInTheDocument();
+  });
+
+  test('should render versions sorted by timestamp in descending order', () => {
+    render(<VersionsComponent packageMeta={dataUnsorted} packageName={'dummy'} />);
+
+    const versionElements = screen.getAllByTestId('version-list-link');
+    const versions = versionElements.map((el) => el.textContent);
+
+    // Expected order based on timestamps in unsorted-versions.json:
+    expect(versions).toEqual(['1.0.1', '1.0.0', '0.1.1', '0.1.0']);
   });
 
   test.todo('should click on version link');
