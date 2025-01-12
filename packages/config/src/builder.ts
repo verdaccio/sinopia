@@ -3,7 +3,7 @@ import { merge } from 'lodash';
 import {
   AuthConf,
   ConfigYaml,
-  LoggerConfItem,
+  LoggerConfigItem,
   PackageAccessYaml,
   Security,
   UpLinkConf,
@@ -47,7 +47,7 @@ export default class ConfigBuilder {
     return this;
   }
 
-  public addLogger(log: LoggerConfItem) {
+  public addLogger(log: LoggerConfigItem) {
     this.config.log = log;
     return this;
   }

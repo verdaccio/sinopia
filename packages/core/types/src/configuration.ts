@@ -40,12 +40,6 @@ export interface PackageAccessYaml {
   unpublish?: string;
 }
 
-export interface LoggerConfItem {
-  type: LoggerType;
-  format: LoggerFormat;
-  level: LoggerLevel;
-}
-
 export interface Headers {
   [key: string]: string;
 }
@@ -262,9 +256,9 @@ export interface ConfigYaml {
   storage?: string | void;
   packages: PackageList;
   uplinks: UpLinksConfList;
-  log?: LoggerConfItem;
+  log?: LoggerConfigItem;
   // @deprecated deprecation path from 5.x
-  logs?: LoggerConfItem;
+  logs?: LoggerConfigItem;
   web?: WebConf;
   auth?: AuthConf;
   security: Security;
