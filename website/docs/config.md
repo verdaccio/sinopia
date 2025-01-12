@@ -129,7 +129,7 @@ security:
     sign:
       expiresIn: 1h # 1 hour by default
     verify:
-     	someProp: [value]
+      someProp: [value]
 ```
 
 ### Server {#server}
@@ -183,20 +183,29 @@ packages:
 
 ### Offline Publish {#offline-publish}
 
-By default `verdaccio` does not allow you to publish packages when the client is offline. This can be overridden by setting this value to _true_.
+By default Verdaccio does not allow you to publish packages when the client is offline. This can be overridden by setting this value to _true_.
 
 ```yaml
 publish:
   allow_offline: false
 ```
 
-### Checking Package Ownership {#chec-owner}
+### Checking Package Ownership {#check-owner}
 
 By default, [package access](packages.md) defines who is allowed to publish and unpublish packages. By setting `check_owners` to _true_, only package owners are allowed to make changes to a package. The first owner of a package is the user who published the first version. Further owners can be added or removed using [`npm owner`](https://docs.npmjs.com/cli/v10/commands/npm-owner). You can find the list of current owners using `npm owner list` or by checking the package manifest under `maintainers`.
 
 ```yaml
 publish:
   check_owners: false
+```
+
+### Keep Readmes {#keep-readmes}
+
+By default, Verdaccio stores only the readme markdown of the latest version for each package. Setting `keep_readmes` to `'tagged'` keeps the readmes of versions with `dist-tags` (for example, `latest`, `next`, and major branches). Using the `'all'` setting will retain the complete history of readme versions. Note that `'all'` can significantly increase the required storage space for packages published to Verdaccio!
+
+```yaml
+publish:
+  keep_readmes: 'tagged'
 ```
 
 <small>Since: `verdaccio@2.3.6` due [#223](https://github.com/verdaccio/verdaccio/pull/223)</small>

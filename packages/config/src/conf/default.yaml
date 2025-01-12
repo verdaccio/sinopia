@@ -121,6 +121,7 @@ server:
 # publish:
 #   allow_offline: false
 #   check_owners: false
+#   keep_readmes: 'latest' | 'tagged' | 'all'
 
 # https://verdaccio.org/docs/configuration#url-prefix
 # url_prefix: /verdaccio/
@@ -143,11 +144,11 @@ server:
 #         expiresIn: 29d
 #       verify:
 #         someProp: [value]
-#    web:
-#      sign:
-#        expiresIn: 1h # 1 hour by default
-#      verify:
-#         someProp: [value]
+#   web:
+#     sign:
+#       expiresIn: 1h # 1 hour by default
+#     verify:
+#       someProp: [value]
 
 # https://verdaccio.org/docs/configuration#user-rate-limit
 # userRateLimit:
