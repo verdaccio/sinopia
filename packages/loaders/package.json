@@ -17,9 +17,9 @@
     "lodash": "4.17.21"
   },
   "devDependencies": {
-    "@verdaccio/logger": "workspace:8.0.0-next-8.7",
-    "@verdaccio/core": "workspace:8.0.0-next-8.7",
-    "@verdaccio/config": "workspace:8.0.0-next-8.7",
+    "@verdaccio/logger": "workspace:8.0.0-next-8.8",
+    "@verdaccio/core": "workspace:8.0.0-next-8.8",
+    "@verdaccio/config": "workspace:8.0.0-next-8.8",
     "@verdaccio/types": "workspace:13.0.0-next-8.2",
     "@verdaccio-scope/verdaccio-auth-foo": "0.0.2",
     "verdaccio-auth-memory": "workspace:*",

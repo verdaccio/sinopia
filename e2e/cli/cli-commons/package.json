@@ -4,8 +4,8 @@
   "version": "2.0.0-next-8.0",
   "main": "src/index.ts",
   "devDependencies": {
-    "@verdaccio/config": "workspace:8.0.0-next-8.7",
-    "@verdaccio/core": "workspace:8.0.0-next-8.7",
+    "@verdaccio/config": "workspace:8.0.0-next-8.8",
+    "@verdaccio/core": "workspace:8.0.0-next-8.8",
     "@verdaccio/types": "workspace:13.0.0-next-8.2",
     "debug": "4.4.0",
     "fs-extra": "11.2.0",
@@ -13,7 +13,7 @@
     "got": "11.8.6",
     "js-yaml": "4.1.0",
     "lodash": "4.17.21",
-    "verdaccio": "workspace:8.0.0-next-8.7"
+    "verdaccio": "workspace:8.0.0-next-8.8"
   },
   "scripts": {
     "test": "echo no test",

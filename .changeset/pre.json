@@ -58,7 +58,8 @@
     "@verdaccio/website": "6.0.0",
     "@verdaccio/e2e-cli-npm-common": "1.0.0",
     "@verdaccio/e2e-cli-pnpm-common": "1.0.2-next-8.0",
-    "@verdaccio/e2e-cli-pnpm10": "1.0.0"
+    "@verdaccio/e2e-cli-pnpm10": "1.0.0",
+    "docusaurus-plugin-downloads": "2.0.0"
   },
   "changesets": [
     "angry-doors-tan",
@@ -85,6 +86,7 @@
     "lucky-crabs-enjoy",
     "nine-countries-remember",
     "quick-seas-deny",
+    "real-seahorses-change",
     "rotten-melons-notice",
     "rude-birds-design",
     "rude-socks-walk",
@@ -92,6 +94,7 @@
     "silent-bags-listen",
     "slow-cars-guess",
     "smooth-games-share",
+    "strange-pants-chew",
     "stupid-camels-build",
     "sweet-crabs-deliver",
     "thirty-comics-trade",

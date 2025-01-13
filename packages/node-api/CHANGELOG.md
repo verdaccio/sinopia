@@ -1,5 +1,15 @@
 # @verdaccio/node-api
 
+## 8.0.0-next-8.8
+
+### Patch Changes
+
+- @verdaccio/server@8.0.0-next-8.8
+- @verdaccio/core@8.0.0-next-8.8
+- @verdaccio/config@8.0.0-next-8.8
+- @verdaccio/server-fastify@8.0.0-next-8.8
+- @verdaccio/logger@8.0.0-next-8.8
+
 ## 8.0.0-next-8.7
 
 ### Patch Changes
