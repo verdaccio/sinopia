@@ -37,6 +37,8 @@ packages/plugins/ui-theme/static
 /packages/plugins/ui-theme/src/i18n/download_translations/
 !/packages/plugins/ui-theme/src/i18n/crowdin/ui.json
 
+## ui tests
+!/packages/ui-components/vitest/api/*.tgz
 
 # CI Pnpm cache
 .pnpm-store/
