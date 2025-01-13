@@ -336,10 +336,10 @@ importers:
   e2e/cli/cli-commons:
     devDependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../../packages/config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../../packages/core/core
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -363,7 +363,7 @@ importers:
         specifier: 4.17.21
         version: 4.17.21
       verdaccio:
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../../packages/verdaccio
 
   e2e/cli/e2e-npm-commons:
@@ -516,10 +516,10 @@ importers:
   e2e/ui:
     devDependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../packages/config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../packages/core/core
       '@verdaccio/test-helper':
         specifier: workspace:4.0.0-next-8.3
@@ -534,31 +534,31 @@ importers:
         specifier: 5.1.1
         version: 5.1.1
       verdaccio:
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../packages/verdaccio
 
   packages/api:
     dependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/middleware':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../middleware
       '@verdaccio/store':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../store
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       abortcontroller-polyfill:
         specifier: 1.7.6
@@ -604,10 +604,10 @@ importers:
   packages/auth:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/loaders':
         specifier: workspace:8.0.0-next-8.4
@@ -616,7 +616,7 @@ importers:
         specifier: workspace:8.0.0-next-8.1
         version: link:../signature
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       debug:
         specifier: 4.4.0
@@ -625,14 +625,14 @@ importers:
         specifier: 4.17.21
         version: 4.17.21
       verdaccio-htpasswd:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/htpasswd
     devDependencies:
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/middleware':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../middleware
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -647,16 +647,16 @@ importers:
   packages/cli:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/node-api':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../node-api
       clipanion:
         specifier: 4.0.0-rc.4
@@ -678,10 +678,10 @@ importers:
   packages/config:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       debug:
         specifier: 4.4.0
@@ -747,13 +747,13 @@ importers:
   packages/core/tarball:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core
       '@verdaccio/url':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../url
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../utils
       debug:
         specifier: 4.4.0
@@ -784,7 +784,7 @@ importers:
   packages/core/url:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core
       debug:
         specifier: 4.4.0
@@ -806,10 +806,10 @@ importers:
   packages/hooks:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       core-js:
         specifier: 3.37.1
@@ -825,10 +825,10 @@ importers:
         version: 4.7.8
     devDependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -850,13 +850,13 @@ importers:
         specifier: 0.0.2
         version: 0.0.2
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -871,7 +871,7 @@ importers:
   packages/logger/logger:
     dependencies:
       '@verdaccio/logger-commons':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger-commons
       pino:
         specifier: 9.6.0
@@ -884,7 +884,7 @@ importers:
   packages/logger/logger-commons:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/logger-prettify':
         specifier: workspace:8.0.0-next-8.1
@@ -928,16 +928,16 @@ importers:
   packages/middleware:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/url':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../core/url
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       debug:
         specifier: 4.4.0
@@ -959,7 +959,7 @@ importers:
         version: 2.6.0
     devDependencies:
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       body-parser:
         specifier: 1.20.3
@@ -974,19 +974,19 @@ importers:
   packages/node-api:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/server':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../server/express
       '@verdaccio/server-fastify':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../server/fastify
       core-js:
         specifier: 3.37.1
@@ -1011,10 +1011,10 @@ importers:
   packages/plugins/audit:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       express:
         specifier: 4.21.2
@@ -1027,10 +1027,10 @@ importers:
         version: 2.6.7
     devDependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../auth
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1045,7 +1045,7 @@ importers:
   packages/plugins/auth-memory:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       debug:
         specifier: 4.4.0
@@ -1055,7 +1055,7 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1064,7 +1064,7 @@ importers:
   packages/plugins/htpasswd:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/file-locking':
         specifier: workspace:13.0.0-next-8.2
@@ -1092,10 +1092,10 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1107,13 +1107,13 @@ importers:
   packages/plugins/local-storage:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/file-locking':
         specifier: workspace:13.0.0-next-8.2
         version: link:../../core/file-locking
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../utils
       core-js:
         specifier: 3.37.1
@@ -1144,10 +1144,10 @@ importers:
         specifier: 5.1.2
         version: 5.1.2
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/test-helper':
         specifier: workspace:4.0.0-next-8.3
@@ -1162,7 +1162,7 @@ importers:
   packages/plugins/memory:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       debug:
         specifier: 4.4.0
@@ -1175,10 +1175,10 @@ importers:
         version: 0.5.0
     devDependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1229,13 +1229,13 @@ importers:
         specifier: 16.1.0
         version: 16.1.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
       '@verdaccio/node-api':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../node-api
       '@verdaccio/types':
         specifier: workspace:*
         version: link:../../core/types
       '@verdaccio/ui-components':
-        specifier: workspace:4.0.0-next-8.4
+        specifier: workspace:4.0.0-next-8.5
         version: link:../../ui-components
       '@vitejs/plugin-react':
         specifier: 4.3.4
@@ -1421,13 +1421,13 @@ importers:
   packages/proxy:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       JSONStream:
         specifier: 1.3.5
@@ -1446,7 +1446,7 @@ importers:
         version: 4.17.21
     devDependencies:
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1470,16 +1470,16 @@ importers:
   packages/search:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/proxy':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../proxy
       debug:
         specifier: 4.4.0
@@ -1519,34 +1519,34 @@ importers:
   packages/server/express:
     dependencies:
       '@verdaccio/api':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../api
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/loaders':
         specifier: workspace:8.0.0-next-8.4
         version: link:../../loaders
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/middleware':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../middleware
       '@verdaccio/store':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../store
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../utils
       '@verdaccio/web':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../web
       compression:
         specifier: 1.7.5
@@ -1564,11 +1564,11 @@ importers:
         specifier: 4.17.21
         version: 4.17.21
       verdaccio-audit:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../../plugins/audit
     devDependencies:
       '@verdaccio/proxy':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../proxy
       '@verdaccio/test-helper':
         specifier: workspace:4.0.0-next-8.3
@@ -1580,25 +1580,25 @@ importers:
   packages/server/fastify:
     dependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/store':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../store
       '@verdaccio/tarball':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../../core/tarball
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../utils
       core-js:
         specifier: 3.37.1
@@ -1633,7 +1633,7 @@ importers:
         version: 9.0.2
     devDependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
@@ -1642,10 +1642,10 @@ importers:
   packages/standalone:
     devDependencies:
       '@verdaccio/cli':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../cli
       '@verdaccio/ui-theme':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../plugins/ui-theme
       fs-extra:
         specifier: 11.2.0
@@ -1666,37 +1666,37 @@ importers:
   packages/store:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/hooks':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../hooks
       '@verdaccio/loaders':
         specifier: workspace:8.0.0-next-8.4
         version: link:../loaders
       '@verdaccio/local-storage':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/local-storage
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/proxy':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../proxy
       '@verdaccio/search':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../search
       '@verdaccio/tarball':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../core/tarball
       '@verdaccio/url':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../core/url
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       JSONStream:
         specifier: 1.3.5
@@ -1804,10 +1804,10 @@ importers:
   packages/tools/generator-verdaccio-plugin:
     dependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       chalk:
         specifier: 4.1.2
@@ -1844,25 +1844,25 @@ importers:
   packages/tools/helpers:
     devDependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../logger/logger
       '@verdaccio/middleware':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../middleware
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
         version: link:../../core/types
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../../utils
       body-parser:
         specifier: 1.20.3
@@ -1883,16 +1883,16 @@ importers:
   packages/tools/local-publish:
     devDependencies:
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../../core/core
       '@verdaccio/types':
         specifier: workspace:13.0.0-next-8.2
         version: link:../../core/types
       verdaccio:
-        specifier: 8.0.0-next-8.7
+        specifier: 8.0.0-next-8.8
         version: link:../../verdaccio
 
   packages/tools/local-scripts:
@@ -2102,7 +2102,7 @@ importers:
   packages/utils:
     dependencies:
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       lodash:
         specifier: 4.17.21
@@ -2117,41 +2117,41 @@ importers:
   packages/verdaccio:
     dependencies:
       '@verdaccio/cli':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../cli
       '@verdaccio/hooks':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../hooks
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/node-api':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../node-api
       '@verdaccio/ui-theme':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../plugins/ui-theme
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       verdaccio-audit:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/audit
       verdaccio-htpasswd:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/htpasswd
     devDependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/store':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../store
       '@verdaccio/test-helper':
         specifier: workspace:4.0.0-next-8.3
@@ -2190,34 +2190,34 @@ importers:
   packages/web:
     dependencies:
       '@verdaccio/auth':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../auth
       '@verdaccio/config':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../config
       '@verdaccio/core':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../core/core
       '@verdaccio/loaders':
         specifier: workspace:8.0.0-next-8.4
         version: link:../loaders
       '@verdaccio/logger':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../logger/logger
       '@verdaccio/middleware':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../middleware
       '@verdaccio/store':
-        specifier: workspace:8.0.0-next-8.7
+        specifier: workspace:8.0.0-next-8.8
         version: link:../store
       '@verdaccio/tarball':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../core/tarball
       '@verdaccio/url':
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../core/url
       '@verdaccio/utils':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../utils
       debug:
         specifier: 4.4.0
@@ -2230,7 +2230,7 @@ importers:
         version: 4.17.21
     devDependencies:
       '@verdaccio/api':
-        specifier: workspace:8.1.0-next-8.7
+        specifier: workspace:8.1.0-next-8.8
         version: link:../api
       '@verdaccio/test-helper':
         specifier: workspace:4.0.0-next-8.3
@@ -2251,10 +2251,10 @@ importers:
         specifier: 7.0.0
         version: 7.0.0
       verdaccio-auth-memory:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/auth-memory
       verdaccio-memory:
-        specifier: workspace:13.0.0-next-8.7
+        specifier: workspace:13.0.0-next-8.8
         version: link:../plugins/memory
 
   website:
@@ -2311,7 +2311,7 @@ importers:
         specifier: 1.2.4
         version: 1.2.4
       '@verdaccio/ui-components':
-        specifier: workspace:4.0.0-next-8.4
+        specifier: workspace:4.0.0-next-8.5
         version: link:../packages/ui-components
       chart.js:
         specifier: ^4.4.7

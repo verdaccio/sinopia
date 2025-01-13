@@ -42,7 +42,7 @@
     "debug": "4.4.0"
   },
   "devDependencies": {
-    "@verdaccio/config": "workspace:8.0.0-next-8.7",
+    "@verdaccio/config": "workspace:8.0.0-next-8.8",
     "@verdaccio/types": "workspace:13.0.0-next-8.2"
   },
   "funding": {
