@@ -8,3 +8,4 @@ export { getLocalRegistryTarballUri } from './getLocalRegistryTarballUri';
 export { getTarballDetails, TarballDetails } from './getTarballDetails';
 
 export { RequestOptions };
+export { getVersionFromTarball } from './utils';

@@ -1,7 +1,7 @@
 import buildDebug from 'debug';
 import fastify from 'fastify';
 
-import { Config as AppConfig, createAnonymousRemoteUser } from '@verdaccio/config';
+import { Config as AppConfig } from '@verdaccio/config';
 import { logger } from '@verdaccio/logger';
 import { ConfigYaml, Config as IConfig, RemoteUser } from '@verdaccio/types';
 
@@ -16,6 +16,7 @@ import authPlugin from './plugins/auth';
 import configPlugin from './plugins/config';
 import coreUtils from './plugins/coreUtils';
 import storagePlugin from './plugins/storage';
+import userRemoteVerify from './plugins/userRemoteVerify';
 import login from './routes/web/api/login';
 import readme from './routes/web/api/readme';
 import sidebar from './routes/web/api/sidebar';
@@ -32,15 +33,11 @@ async function startServer(config: ConfigYaml): Promise<any> {
   debug('start fastify server');
   // TODO: custom logger type and logger accepted by fastify does not match
   const fastifyInstance = fastify({ logger: logger as any });
-  fastifyInstance.addHook('onRequest', (request, reply, done) => {
-    request.userRemote = createAnonymousRemoteUser();
-    done();
-  });
   fastifyInstance.register(coreUtils);
   fastifyInstance.register(configPlugin, { config });
   fastifyInstance.register(storagePlugin, { config: configInstance });
   fastifyInstance.register(authPlugin, { config: configInstance });
-
+  fastifyInstance.register(userRemoteVerify);
   // api
   fastifyInstance.register((instance, opts, done) => {
     instance.register(ping);
@@ -57,17 +54,19 @@ async function startServer(config: ConfigYaml): Promise<any> {
     done();
   });
 
-  // web
-  fastifyInstance.register((instance, opts, done) => {
-    instance.register(ping, { prefix: '/web' });
-    done();
+  // debugging purpose
+  fastifyInstance.addHook('onRoute', (routeOptions) => {
+    debug('route: prefix: %s url: %s', routeOptions.prefix, routeOptions.routePath);
   });
+
   return fastifyInstance;
 }
 
 declare module 'fastify' {
+  // @ts-ignore
   interface FastifyRequest {
     userRemote: RemoteUser;
+    authenticationHeader?: string;
   }
 }
 

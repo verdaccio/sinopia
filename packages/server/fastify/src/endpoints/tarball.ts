@@ -1,8 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import buildDebug from 'debug';
 import { FastifyInstance } from 'fastify';
 
 import { HEADERS, HEADER_TYPE } from '@verdaccio/core';
+
+import allow from '../plugins/allow';
+import pkgMetadata from '../plugins/pkgMetadata';
 
 const debug = buildDebug('verdaccio:fastify:tarball');
 
@@ -12,6 +14,9 @@ interface ParamsInterface {
 }
 
 async function tarballRoute(fastify: FastifyInstance) {
+  fastify.register(pkgMetadata);
+  fastify.register(allow, { type: 'access' });
+
   fastify.get<{ Params: ParamsInterface }>('/:package/-/:filename', async (request, reply) => {
     const { package: pkg, filename } = request.params;
     debug('stream tarball for %s@%s', pkg, filename);
@@ -25,10 +30,10 @@ async function tarballRoute(fastify: FastifyInstance) {
       reply.header(HEADER_TYPE.CONTENT_LENGTH, size);
     });
 
-    // request.socket.on('abort', () => {
-    //   debug('request aborted for %o', request.url);
-    //   abort.abort();
-    // });
+    // https://nodejs.org/dist/latest-v18.x/docs/api/http.html#event-close
+    request.socket.on('close', () => {
+      abort.abort();
+    });
 
     return stream;
   });
@@ -55,10 +60,10 @@ async function tarballRoute(fastify: FastifyInstance) {
         reply.header(HEADER_TYPE.CONTENT_LENGTH, size);
       });
 
-      // request.socket.on('abort', () => {
-      //   debug('request aborted for %o', request.url);
-      //   abort.abort();
-      // });
+      // https://nodejs.org/dist/latest-v18.x/docs/api/http.html#event-close
+      request.socket.on('close', () => {
+        abort.abort();
+      });
 
       reply.header(HEADERS.CONTENT_TYPE, HEADERS.OCTET_STREAM);
       return stream;

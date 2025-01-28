@@ -18,7 +18,8 @@ async function searchRoute(fastify: FastifyInstance) {
     // TODO: add validations for query, some parameters are mandatory
     // TODO: review which query fields are mandatory
     const abort = new AbortController();
-    request.socket.on('aborted', () => {
+    // https://nodejs.org/dist/latest-v18.x/docs/api/http.html#event-close
+    request.socket.on('close', () => {
       abort.abort();
     });
     const { url, query } = request.query;

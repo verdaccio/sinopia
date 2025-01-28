@@ -35,6 +35,7 @@ export default fp(
 );
 
 declare module 'fastify' {
+  // @ts-ignore
   interface FastifyInstance {
     apiError: typeof API_ERROR;
     apiMessage: typeof API_MESSAGE;

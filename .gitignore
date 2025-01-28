@@ -13,6 +13,7 @@ node_modules
 ### test
 test-storage*
 .verdaccio_test_env
+packages/server/fastify/debug/storage
 
 # docker examples
 docker-examples/v5/reverse_proxy/nginx/relative_path/storage/*

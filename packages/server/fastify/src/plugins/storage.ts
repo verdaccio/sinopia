@@ -19,6 +19,7 @@ export default fp(
 );
 
 declare module 'fastify' {
+  // @ts-ignore
   interface FastifyInstance {
     storage: Storage;
   }

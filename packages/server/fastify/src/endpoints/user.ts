@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-
-/* eslint-disable no-invalid-this */
 import buildDebug from 'debug';
 import { FastifyInstance } from 'fastify';
 import _ from 'lodash';
@@ -39,6 +36,7 @@ async function userRoute(fastify: FastifyInstance) {
       const { token } = request.params;
       const userRemote: RemoteUser = request.userRemote;
       await fastify.auth.invalidateToken(token);
+      // eslint-disable-next-line no-console
       console.log('userRoute', userRemote);
       reply.code(fastify.statusCode.OK);
       return { ok: fastify.apiMessage.LOGGED_OUT };

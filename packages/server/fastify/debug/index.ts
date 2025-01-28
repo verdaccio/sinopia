@@ -17,11 +17,12 @@ const debug = buildDebug('verdaccio:fastify:debug');
     const configFile = path.join(__dirname, './fastify-conf.yaml');
     debug('configFile %s', configFile);
     const configParsed = parseConfigFile(configFile);
+    // @ts-ignore
     setup(configParsed.log);
     logger.info(`config location ${configFile}`);
     debug('configParsed %s', configParsed);
     process.title = 'fastify-verdaccio';
-    const ser = await server({ logger, config: configParsed });
+    const ser = await server(configParsed);
     await ser.listen(4873);
     logger.info('fastify running on port 4873');
   } catch (err: any) {

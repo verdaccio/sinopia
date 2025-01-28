@@ -3,6 +3,9 @@ import { FastifyInstance } from 'fastify';
 
 import { MergeTags } from '@verdaccio/types';
 
+import allow from '../plugins/allow';
+import pkgMetadata from '../plugins/pkgMetadata';
+
 const debug = buildDebug('verdaccio:fastify:dist-tags');
 
 interface ParamsInterface {
@@ -10,6 +13,9 @@ interface ParamsInterface {
 }
 
 async function distTagsRoute(fastify: FastifyInstance) {
+  fastify.register(pkgMetadata);
+  fastify.register(allow, { type: 'access' });
+
   fastify.get<{ Params: ParamsInterface }>(
     '/-/package/:packageName/dist-tags',
     async (request, reply) => {

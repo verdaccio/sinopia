@@ -1,12 +1,9 @@
-/* eslint-disable no-console */
-
-/* eslint-disable no-invalid-this */
 import { FastifyInstance } from 'fastify';
 
 import { logger } from '@verdaccio/logger';
 
 async function pingRoute(fastify: FastifyInstance) {
-  fastify.get('/-/ping', async () => {
+  fastify.get('/-/ping', () => {
     logger.http('ping');
     return {};
   });

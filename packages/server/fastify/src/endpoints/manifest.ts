@@ -3,10 +3,13 @@ import { FastifyInstance } from 'fastify';
 
 import { stringUtils } from '@verdaccio/core';
 import { Storage } from '@verdaccio/store';
-import { Package, Version } from '@verdaccio/types';
+import { Manifest, Version } from '@verdaccio/types';
+
+import allow from '../plugins/allow';
+import pkgMetadata from '../plugins/pkgMetadata';
 
 const debug = buildDebug('verdaccio:fastify:api:sidebar');
-export type $SidebarPackage = Package & { latest: Version };
+export type $SidebarPackage = Manifest & { latest: Version };
 
 interface ParamsInterface {
   name: string;
@@ -14,6 +17,9 @@ interface ParamsInterface {
 }
 
 async function manifestRoute(fastify: FastifyInstance) {
+  fastify.register(pkgMetadata);
+  fastify.register(allow, { type: 'access' });
+
   fastify.get<{ Params: ParamsInterface }>('/:name', async (request) => {
     const { name } = request.params;
     const storage = fastify.storage;
@@ -30,6 +36,8 @@ async function manifestRoute(fastify: FastifyInstance) {
         protocol: request.protocol,
         headers: request.headers as any,
         host: request.hostname,
+        // @ts-ignore
+        username: request?.userRemote?.name,
       },
       abbreviated,
     });
@@ -41,7 +49,7 @@ async function manifestRoute(fastify: FastifyInstance) {
   }
 
   fastify.get<{ Params: ParamsInterface; Querystring: QueryInterface }>(
-    '/:packageName/:version',
+    '/:name/:version',
     async (request) => {
       const { name, version } = request.params;
       const storage = fastify.storage;
