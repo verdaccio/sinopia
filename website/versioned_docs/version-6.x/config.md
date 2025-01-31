@@ -143,7 +143,7 @@ If verdaccio runs on **Node.js 22** or higher, you will not see this warning sin
 
 The **migrateToSecureLegacySignature** property is only available for versions higher than 5.31.0 and is **false** by default.
 
-:::info
+:::
 
 ```yaml
 security:
@@ -170,7 +170,7 @@ security:
     sign:
       expiresIn: 1h # 1 hour by default
     verify:
-     	someProp: [value]
+      someProp: [value]
 ```
 
 ### Server {#server}
@@ -224,7 +224,7 @@ packages:
 
 ### Offline Publish {#offline-publish}
 
-By default `verdaccio` does not allow you to publish packages when the client is offline. This can be can be overridden by setting this value to _true_.
+By default Verdaccio does not allow you to publish packages when the client is offline. This can be can be overridden by setting this value to _true_.
 
 ```yaml
 publish:
