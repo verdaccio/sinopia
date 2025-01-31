@@ -85,19 +85,19 @@
     "@octokit/rest": "21.1.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/async": "3.2.24",
-    "@types/express": "4.17.21",
-    "@types/express-serve-static-core": "4.19.6",
+    "@types/express": "5.0.0",
+    "@types/express-serve-static-core": "5.0.6",
     "@types/http-errors": "2.0.4",
     "@types/jest": "29.5.13",
     "@types/lodash": "4.17.10",
-    "@types/mime": "3.0.4",
+    "@types/mime": "4.0.0",
     "@types/minimatch": "5.1.2",
-    "@types/node": "20.16.11",
+    "@types/node": "22.13.0",
     "@types/pino": "7.0.5",
     "@types/request": "2.48.12",
     "@types/semver": "7.5.8",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "8.22.0",
+    "@typescript-eslint/parser": "8.22.0",
     "@verdaccio-scope/verdaccio-auth-foo": "0.0.2",
     "@verdaccio/types": "12.0.0-next-7.5",
     "babel-jest": "29.7.0",
@@ -128,7 +128,7 @@
     "standard-version": "9.5.0",
     "supertest": "7.0.0",
     "ts-node": "10.9.2",
-    "typescript": "4.9.5",
+    "typescript": "5.7.3",
     "verdaccio-auth-memory": "10.2.2",
     "verdaccio-memory": "10.3.2"
   },
@@ -177,7 +177,7 @@
   "license": "MIT",
   "resolutions": {
     "@types/serve-static": "1.15.7",
-    "@types/express-serve-static-core": "4.19.6"
+    "@types/express-serve-static-core": "5.0.6"
   },
   "collective": {
     "type": "opencollective",
