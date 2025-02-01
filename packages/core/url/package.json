@@ -1,6 +1,6 @@
 {
   "name": "@verdaccio/url",
-  "version": "13.0.0-next-8.7",
+  "version": "13.0.0-next-8.8",
   "description": "url utilities resolver",
   "keywords": [
     "private",
@@ -33,13 +33,13 @@
     "access": "public"
   },
   "dependencies": {
-    "@verdaccio/core": "workspace:8.0.0-next-8.7",
+    "@verdaccio/core": "workspace:8.0.0-next-8.8",
     "debug": "4.4.0",
     "lodash": "4.17.21",
     "validator": "13.12.0"
   },
   "devDependencies": {
-    "@verdaccio/types": "workspace:13.0.0-next-8.2",
+    "@verdaccio/types": "workspace:13.0.0-next-8.3",
     "node-mocks-http": "1.14.1"
   },
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@verdaccio/utils",
-  "version": "8.1.0-next-8.7",
+  "version": "8.1.0-next-8.8",
   "description": "verdaccio utilities",
   "main": "./build/index.js",
   "types": "build/index.d.ts",
@@ -29,7 +29,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@verdaccio/core": "workspace:8.0.0-next-8.7",
+    "@verdaccio/core": "workspace:8.0.0-next-8.8",
     "lodash": "4.17.21",
     "minimatch": "7.4.6",
     "semver": "7.6.3"
