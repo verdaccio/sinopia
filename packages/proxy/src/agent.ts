@@ -43,7 +43,7 @@ class CustomAgents {
   }
 
   private getParsedUrl() {
-    return this.proxy ? new URL(this.proxy) : new URL(this.url);
+    return new URL(this.url);
   }
 }
 
