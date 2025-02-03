@@ -312,8 +312,8 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
       undici-types:
-        specifier: 5.28.2
-        version: 5.28.2
+        specifier: 5.28.4
+        version: 5.28.4
       update-ts-references:
         specifier: 3.6.0
         version: 3.6.0
@@ -26483,8 +26483,8 @@ packages:
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  /undici-types@5.28.2:
-    resolution: {integrity: sha512-W71OLwDqzIO0d3k07qg1xc7d4cX8SsSwuCO4bQ4V7ITwduXXie/lcImofabP5VV+NvuvSe8ovKvHVJcizVc1JA==}
+  /undici-types@5.28.4:
+    resolution: {integrity: sha512-3OeMF5Lyowe8VW0skf5qaIE7Or3yS9LS7fvMUI0gg4YxpIBVg0L8BxCmROw2CcYhSkpR68Epz7CGc8MPj94Uww==}
     dev: true
 
   /undici-types@6.20.0:

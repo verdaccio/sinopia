@@ -115,7 +115,7 @@
     "supertest": "7.0.0",
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
-    "undici-types": "5.28.2",
+    "undici-types": "5.28.4",
     "semver": "^7.6.3",
     "update-ts-references": "3.6.0",
     "verdaccio-audit": "workspace:*",
